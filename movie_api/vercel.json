@@ -1,8 +1,10 @@
 {
     "builds": [
         {
+            "version": 2,
             "src": "MOVIE_API/app/main.py",
             "use": "@vercel/python"
+            "framework": "fastapi"
         }
     ],
     "routes": [
