@@ -1,14 +1,14 @@
 {
     "builds": [
         {
-            "src": "MOVIE_API/main.py",
+            "src": "MOVIE_API/app/main.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "MOVIE_API/main.py"
+            "dest": "MOVIE_API/app/main.py"
         }
     ]
 }
