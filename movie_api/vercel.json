@@ -1,16 +1,11 @@
+
 {
-    "builds": [
-        {
-            "version": 2,
-            "src": "MOVIE_API/app/main.py",
-            "use": "@vercel/python"
-            "framework": "fastapi"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "MOVIE_API/app/main.py"
-        }
-    ]
+  "functions": {
+    "api/*.py": {
+      "runtime": "python3.9"
+    }
+  },
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/main.py" }
+  ]
 }
