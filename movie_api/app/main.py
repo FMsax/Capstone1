@@ -12,10 +12,6 @@ models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 
-# Your routes and logic here
-
-if __name__ == "__main__":
-    run("main:app", host="0.0.0.0", port=8000, reload=True)
 
 app.include_router(users.router)
 app.include_router(movies.router)
